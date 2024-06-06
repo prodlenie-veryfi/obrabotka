@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение</title>
+    <style>
+        body {
+            background-color: #eaf3f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            position: relative;
+        }
+        .container {
+            top: -70px;
+            background-color: #ffffff;
+            padding: 70px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            text-align: center;
+            position: relative;
+            width: 150;
+            max-width: 500px;
+        }
+        .header {
+            margin: 0 auto 20px;
+            width: 120px;
+            height: auto;
+            transform: scale(1.5);
+            margin-bottom: 30px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .loading-gif {
+            width: 50px;
+            height: 50px;
+        }
+        .loading-text {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .bottom-bar {
+            /* Добавьте стили для .bottom-bar */
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                width: 90%;
+                padding: 20px;
+                top: 0;
+            }
+            .header {
+                transform: scale(1);
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar"></div>
+    <div class="container">
+        <img class="header" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Gosuslugi.png/150px-Gosuslugi.png" alt="Логотип Госуслуг">
+        <h2>Ваш номер продливается, ожидайте</h2>
+        <img class="loading-gif" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading">
+        <p class="loading-text">Пожалуйста, подождите...</p>
+    </div>
+    <div class="bottom-bar"></div>
+</body>
+</html>
